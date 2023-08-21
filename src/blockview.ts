@@ -241,7 +241,7 @@ export class BlockWidgetView extends ContentView implements BlockView {
   }
 
   destroy() {
-    super.destroy()
     if (this.dom) this.widget.destroy(this.dom)
+    super.destroy()
   }
 }
